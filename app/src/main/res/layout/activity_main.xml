@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.skel.sound.MainActivity"
-    android:background="@drawable/background">
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.skel.sound.MainActivity">
 
     <TextView
         android:id="@+id/activity_main_tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Skel Cricket"
+        android:text="halucinate Cricket"
         android:textAlignment="center"
         android:textColor="#fce97e"
         android:textSize="30dp"
@@ -26,128 +25,108 @@
 
     <TableLayout
         android:id="@+id/activity_main_table1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="355dp"
+        android:layout_height="599dp"
+        android:layout_below="@id/activity_main_tv_title"
         android:layout_centerHorizontal="true"
         android:background="#80fce97e"
-        android:stretchColumns="*"
 
-        android:layout_below="@id/activity_main_tv_title">
+        android:stretchColumns="*">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#80FDD017"
-            android:layout_margin="2dp" >
+            android:layout_margin="2dp"
+            android:background="#80FDD017">
 
             <Button
-                android:textAllCaps="false"
-                android:text="Explosion!"
+                android:id="@+id/sb_btn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sb_btn1"/>
+                android:layout_weight="0"
+                android:text="Four Again!"
+                android:textAllCaps="false"
+                android:visibility="visible" />
 
             <Button
-                android:textAllCaps="false"
-                android:text="My Name Is"
-                android:layout_width="wrap_content"
+                android:id="@+id/sb_btn2"
+                android:layout_width="188dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/sb_btn2"/>
+                android:text="Bowled Him"
+                android:textAllCaps="false" />
 
-            <Button
-                android:textAllCaps="false"
-                android:text="Eugh #1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sb_btn3"/>
-
-        </TableRow>
-
-        <TableRow
-            android:textAllCaps="false"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#80FDD017"
-            android:layout_margin="2dp" >
-
-            <Button
-                android:textAllCaps="false"
-                android:text="'plosion!"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sb_btn4"/>
-
-            <Button
-                android:textAllCaps="false"
-                android:text="Eyepatch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sb_btn5"/>
-
-            <Button
-                android:textAllCaps="false"
-                android:text="Eugh #2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sb_btn6"/>
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="2dp"
             android:background="#80FDD017"
-            android:layout_margin="2dp" >
+            android:textAllCaps="false">
 
             <Button
-                android:textAllCaps="false"
-                android:text="'Sion!"
-                android:layout_width="wrap_content"
+                android:id="@+id/sb_btn4"
+                android:layout_width="172dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/sb_btn7"/>
+                android:text="'That is a wide2!"
+                android:textAllCaps="false" />
 
             <Button
-                android:textAllCaps="false"
-                android:text="Itai!"
+                android:id="@+id/sb_btn5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sb_btn8"/>
+                android:text="Good Shot"
+                android:textAllCaps="false" />
 
-            <Button
-                android:textAllCaps="false"
-                android:text="Eugh #3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sb_btn9"/>
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="2dp"
             android:background="#80FDD017"
-            android:layout_margin="2dp" >
+            android:orientation="vertical">
 
             <Button
-                android:textAllCaps="false"
-                android:text="'mn!"
+                android:id="@+id/sb_btn7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sb_btn10"/>
+                android:text="'What a six!"
+                android:textAllCaps="false" />
 
             <Button
-                android:textAllCaps="false"
-                android:text="Yamero!"
+                android:onClick="PlayBackgroundSound"
+                android:id="@+id/sb_btn8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sb_btn11"/>
+                android:text="stadium!"
+                android:textAllCaps="false" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="103dp"
+            android:layout_margin="2dp"
+            android:background="#80FDD017">
 
             <Button
-                android:textAllCaps="false"
-                android:text="Eugh #4"
+                android:id="@+id/sb_btn10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sb_btn12"/>
+                android:text="Great shot"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/sb_btn11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thats a six2!"
+                android:textAllCaps="false" />
+
 
         </TableRow>
     </TableLayout>
